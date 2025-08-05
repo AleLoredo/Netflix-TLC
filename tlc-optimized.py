@@ -1,3 +1,10 @@
+#El codigo ahora incluye Numerosity Reduction que se escala automaticamente en funcion del n y n_samploes definido
+#Función calculate_optimal_sample_size() que calcula exactamente lo necesario evitando efectuar limpieza sobre datos que no se van a uasr
+#Factor de seguridad configurable (default 2 = tolera 50% pérdida)
+#Tracking preciso de datos procesados vs estimados
+#Métricas comparativas entre enfoques
+#Escalabilidad automática para diferentes n y n_samples
+
 from pyspark.sql import functions as F
 from pyspark.sql.types import DoubleType, IntegerType
 import numpy as np
